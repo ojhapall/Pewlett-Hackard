@@ -20,8 +20,7 @@ A total of 90,398 roles will need to be filled.
 Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees?
 There are not enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees. Based on the image below we can conclude that there would be roughly 50 staff to each mentor. 
 
-<img width="164" alt="retiring64_titles" src="https://user-images.githubusercontent.com/68453460/97129726-037a5400-1716-11eb-8485-74d30b3f4135.png">
-<img width="163" alt="Retiring Titles" src="https://u
+<img width="164" alt="retiring64_titles" src="https://user-images.githubusercontent.com/68453460/97129963-89969a80-1716-11eb-91ef-8e74f356a3c8.png">
 
 Using similar ideology, if we ran the analysis for people born in 1964-01-01 to 1964-12-31 then the data would show that approximately 300,024 people would be eligible for retirement. This shows that 1965 would have a significantly lower number of retiring individuals or potentially more than 90,398 roles to fill if those born in 1964 will be retiring in the same year. 
 
