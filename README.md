@@ -25,4 +25,27 @@ There are not enough qualified, retirement-ready employees in the departments to
 
 Using similar ideology, if we ran the analysis for people born in 1964-01-01 to 1964-12-31 then the data would show that approximately 300,024 people would be eligible for retirement. This shows that 1965 would have a significantly lower number of retiring individuals or potentially more than 90,398 roles to fill if those born in 1964 will be retiring in the same year. 
 
-![Mentoring_title](https://user-images.githubusercontent.com/68453460/97129730-05dcae00-1716-11eb-9c24-7d1a8eb0a7a4.png)
+![Mentoring_title](https://user-images.githubusercontent.com/68453460/97129925-708de980-1716-11eb-90a6-b4745c477545.png)
+
+ADDITIONAL QUERIES
+
+SELECT DISTINCT ON (e.emp_no) e.emp_no, 
+e.first_name, 
+e.last_name, 
+e.birth_date,
+de.from_date,
+de.to_date,
+ti.title
+INTO non_retiring_employees
+FROM employees AS e
+INNER JOIN dept_emp as de
+ON (e.emp_no = de.emp_no)
+INNER JOIN title as ti
+ON (e.emp_no = ti.emp_no)
+--WHERE (e.birth_date BETWEEN '1964-01-01' AND '1964-12-31')
+ORDER BY e.emp_no ASC;
+
+SELECT COUNT (nre.emp_no), nre.title
+INTO retiring64_titles
+FROM non_retiring_employees AS nre
+GROUP BY nre.title
